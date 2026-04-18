@@ -1,10 +1,10 @@
 # 7dots
 
-A little expression with seven dots :)
-
 7dots is a watch face that lets you get information minimally with seven dots.
 
-## Dot Functions
+<img width="144" height="168" alt="7dots" src="https://github.com/user-attachments/assets/41979f8e-ac96-4bf7-9761-5038511eac73" />
+
+## Dot Features
 
 - 📅 Day of the week
 - 👟 Step goal progress
