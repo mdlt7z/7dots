@@ -2,6 +2,8 @@
 
 7dots is a watch face that lets you get information minimally with seven dots.
 
+![screenshot_basalt](misc/screenshot_basalt.png)
+
 ## Dot Features
 
 - 📅 Day of the week
