@@ -2,7 +2,7 @@
 
 7dots is a watch face that lets you get information minimally with seven dots.
 
-<img width="144" height="168" alt="7dots" src="https://github.com/user-attachments/assets/41979f8e-ac96-4bf7-9761-5038511eac73" />
+![screenshot](misc/screenshot_basalt.png)
 
 ## Dot Features
 
