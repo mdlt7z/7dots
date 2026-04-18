@@ -21,6 +21,10 @@ Currently, only color models are supported.
 - Emery
 - Gabbro
 
+## Download
+
+[Pebble Appstore](https://apps.repebble.com/e7546ae4120f414d9c7014b0)
+
 ## License
 
 [MIT](LICENSE)
