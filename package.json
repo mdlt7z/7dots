@@ -1,0 +1,65 @@
+{
+  "name": "7dots",
+  "author": "mdlt7z",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.0.8"
+  },
+  "pebble": {
+    "displayName": "7dots",
+    "uuid": "4800ed70-7653-459c-8b33-e89b2a44eec8",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "emery",
+      "gabbro"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "MENU_ICON",
+          "file": "images/menuicon.png",
+          "menuIcon": true
+        }
+      ]
+    },
+    "capabilities": [
+      "location",
+      "configurable"
+    ],
+    "messageKeys": [
+      "TEMPERATURE",
+      "CONDITIONS",
+      "REQUEST_WEATHER",
+      "WEATHER_DAY_0",
+      "WEATHER_DAY_1",
+      "WEATHER_DAY_2",
+      "WEATHER_DAY_3",
+      "WEATHER_DAY_4",
+      "WEATHER_DAY_5",
+      "WEATHER_DAY_6",
+      "SUNRISE",
+      "SUNSET",
+      "StepGoal"
+    ]
+  },
+  "scripts": {
+    "dev": "pebble build && pebble install --emulator basalt",
+    "dev:b": "pebble build && pebble install --emulator basalt",
+    "dev:c": "pebble build && pebble install --emulator chalk",
+    "dev:e": "pebble build && pebble install --emulator emery",
+    "dev:g": "pebble build && pebble install --emulator gabbro",
+    "q:on": "pebble emu-set-timeline-quick-view on",
+    "q:off": "pebble emu-set-timeline-quick-view off"
+  }
+}

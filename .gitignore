@@ -1,0 +1,12 @@
+# build output
+build
+
+# pebble
+.lock-waf*
+compile_flags.txt
+
+# dependencies
+node_modules/
+
+# mac
+.DS_Store
