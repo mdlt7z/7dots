@@ -102,14 +102,14 @@ static void outbox_sent_callback(DictionaryIterator *iterator, void *context) {
 
 #define FONT_SMALL FONT_KEY_GOTHIC_18_BOLD
 #define FONT_RECT FONT_KEY_LECO_36_BOLD_NUMBERS
-#define FONT_ROUND FONT_KEY_LECO_26_BOLD_NUMBERS_AM_PM
+#define FONT_ROUND PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, FONT_SMALL, FONT_SMALL, FONT_KEY_LECO_26_BOLD_NUMBERS_AM_PM, FONT_SMALL, FONT_SMALL, FONT_SMALL, FONT_KEY_LECO_36_BOLD_NUMBERS)
 
 #define FONT_QUICK_TIME PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, FONT_SMALL, FONT_KEY_GOTHIC_14_BOLD, FONT_SMALL, FONT_SMALL, FONT_KEY_LECO_20_BOLD_NUMBERS, FONT_SMALL, FONT_SMALL)
 #define FONT_QUICK_WEATHER PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, FONT_SMALL, FONT_KEY_GOTHIC_14_BOLD, FONT_SMALL, FONT_SMALL, FONT_SMALL, FONT_SMALL, FONT_SMALL)
 #define QUICK_Y PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, 0, 19, 0, 0, 28, 0, 0)
 
-#define TIME_Y PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, 0, 46, 42, 0, 52, 0, 54)
-#define WEATHER_Y PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, 0, 64, 16, 0, 70, 0, 28)
+#define TIME_Y PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, 0, 46, 42, 0, 52, 0, 62)
+#define WEATHER_Y PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, 0, 64, 164, 0, 70, 0, 228)
 #define ROUND_TIME_Y PBL_PLATFORM_SWITCH(PBL_PLATFORM_TYPE_CURRENT, 0, 0, 18, 0, 0, 0, 24)
 
 static void prv_unobstructed_will_change(GRect now_bounds, void *context) {
@@ -174,7 +174,7 @@ static void main_window_load(Window *window) {
   layer_add_child(s_window_layer, s_battery_layer);
 
   // weather
-  s_weather_text = text_layer_create(GRect(PADDING, PBL_IF_ROUND_ELSE(WEATHER_Y, bounds.size.h - WEATHER_Y), PBL_IF_ROUND_ELSE(bounds.size.w, bounds.size.w - PADDING * 2), 24));
+  s_weather_text = text_layer_create(GRect(PADDING, bounds.size.h - WEATHER_Y, bounds.size.w - PADDING * 2, 24));
   text_layer_set_background_color(s_weather_text, GColorClear);
   text_layer_set_text_color(s_weather_text, GColorBlack);
   text_layer_set_font(s_weather_text, fonts_get_system_font(FONT_SMALL));
