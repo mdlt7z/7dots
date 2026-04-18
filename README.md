@@ -21,6 +21,10 @@ Currently, only color models are supported.
 - Emery
 - Gabbro
 
+## License
+
+[MIT](LICENSE)
+
 ## Author
 
 2026 © mdlt7z
