@@ -8,7 +8,7 @@
 
 - 📅 Day of the week
 - 👟 Step goal progress
-- ☁️ Weather forecast
+- ☁️ Weekly weather forecast
 - ☀️ Sunrise/Sunset
 - 🔋 Battery
 
@@ -24,6 +24,10 @@ Currently, only color models are supported.
 ## Download
 
 [Pebble Appstore](https://apps.repebble.com/e7546ae4120f414d9c7014b0)
+
+## Inspiration
+
+I was inspired by [Halcyon](https://github.com/freakified/halcyon)'s dots!
 
 ## License
 
